@@ -7,27 +7,33 @@
     box-sizing: border-box;
     font-family: 'Roboto',sans-serif;
 }
-header {
-    height: 70px;
-    background-color: #22292F;
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*HEADER*/
+.menu {
+    height: 85px;/*85 высота меню*/
+    background-color: #FBF7F3;
     padding: 10px 0;
 }
-.menu-wrap {
+.menu__wrap {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
 }
-.logo-img {
+.menu__logo {
     height: 50px;
+    margin-top: 7px;
 }
-.menu-icon {
+.menu__icon {
     font-size: 2.4em;
-    color: #ffffff;
+    color: #000;
     line-height: 50px;
 }
 nav {
     position: absolute;
-    background-color: #3D4852;
+    background-color: #FBF7F3;
     top:70px;
     left:0;
     width: 100%;
@@ -39,30 +45,51 @@ nav ul {
     transition: all 0.5s;
 }
 nav ul li {
-    padding: 0 15px;
+    padding: 0 7px;/*слева отступ для менюшек*/
+ 
 }
 nav ul li a {
     display: inline-block;
-    padding: 12px;
+    padding: 12px;/*12*/
     /* Add your custom styles below to change appearance of links */
-    color: #DAE1E7;
+    color: #000;
     text-decoration: none;
     letter-spacing: 0.05em;
+    
+}
+nav ul li:last-child a{
+    border-radius: 9999px;
+    color: #FFFFFF;
+    background-color: #7140EB;
 }
 nav ul li a:hover, nav ul li a:focus {
     color: #eb6f4a;
+}
+.menu_nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_links{
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 9999px;
+    margin: 13px 22px;
+    background-color: #FFFFFF;
+}
+.menu__burger__logo{
+    margin-right: 22px;
 }
 #checkbox {
     display: none;
 }
 #checkbox:checked ~ nav ul {
-    max-height: 200px;
+    max-height: 300px;/*размер раскрывающегося меню*/
     padding: 15px 0;
     transition: all 0.5s;
 }
 
-@media (min-width: 768px) { 
-    .menu-icon {
+@media (min-width: 845px) { 
+    .menu__icon {
         display: none;
     }
     nav {
@@ -72,7 +99,7 @@ nav ul li a:hover, nav ul li a:focus {
     }
     nav ul {
         max-height: 70px;
-        padding: 15px 0;
+        padding: 7px 0;
         text-align: right;
     }
     nav ul li {
@@ -80,7 +107,7 @@ nav ul li a:hover, nav ul li a:focus {
         padding-left: 20px;
     }
 }
-
+/* 
 h1{
     font-size: 2.2em;
     text-align: center;
@@ -94,4 +121,4 @@ p{
     padding: 0 40px;
     text-align: center;
     color: #3D4852;
-}
+} */

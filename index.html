@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation</title>
+    <title>Project2</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/normalize.css">
 </head>
 <body>
+    
     <header class="menu">
-        <div class="menu-wrap">
-            <img src="assets/images/logo.png" class="logo-img" alt="Logo">
+        <div class="menu__wrap">
+            <img src="assets/images/logo.png" class="menu__logo" alt="Logo">
             <input type="checkbox" id="checkbox">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">En/De</a></li>
-                    <li><a href="#">Request an invite</a></li>
-                </ul>
+            <nav class="menu_nav nav">
+                <div class="nav_links links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">En/De</a></li>
+                        <li><a href="#">Request an invite</a></li>
+                    </ul>
+                </div>
             </nav>
-            <label for="checkbox">
-                <i class="fa fa-bars menu-icon"></i>
+            <label class="menu__burger__logo" for="checkbox">
+                <i class="fa fa-bars menu__icon"></i>
             </label>
         </div>
     </header>
