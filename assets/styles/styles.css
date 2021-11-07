@@ -272,8 +272,42 @@ nav ul li a:hover, nav ul li a:focus {
     width: 90vw;
 }
 /* END BUILT TO MOVE SECTION */
-/* BEGIN SECTION ON DRIVING ELEMENTS */
 
+/* BEGIN SECTION ON DRIVING ELEMENTS */
+.section__on-driving-elements{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 11.25vw;
+}
+.driving-elements__element{
+    margin: 5px 4.42vw;
+}
+.element-drive__title{
+    margin-bottom: 12px;
+}
+.drive-title{
+    font-size: 2.08vw;
+    line-height: 120%;
+    color: #2E2C34;
+}
+.element-drive__image{
+    width: 320px;
+    margin-bottom: 22px;
+}
+.element-drive__description{
+    width: 135px;
+    height: auto;
+}
+.element-description{
+    font-size: 1.39vw;
+    line-height: 117%;
+    text-align: left;
+    color: #49464F;
+}
+/*END SECTION ON DRIVING ELEMENTS*/
 
 /*HEADER COMPUTER VERSION*/
 @media (min-width: 1040px) {
@@ -355,4 +389,39 @@ nav ul li a:hover, nav ul li a:focus {
     .item-point__text{
         font-size: 2.22vw;
     }
+}
+/* SECTION ON DRIVING ELEMENTS MOBILE VERSION */
+@media (max-width: 825px)
+{
+    .drive-title{
+        font-size: 3.49vw;
+    }
+    .element-description{
+        font-size: 2.13vw;
+    }
+  
+}
+@media (max-width: 625px)
+{
+    .drive-title{
+        font-size: 7.06vw;
+    }
+    .element-description{
+        font-size: 3.71vw;
+    }
+  
+}
+@media (max-width: 320px)
+{
+    .element-drive__image{
+        width: 220px;
+        margin-bottom: 22px;
+    }
+    .drive-title{
+        font-size: 7.06vw;
+    }
+    .element-description{
+        font-size: 3.71vw;
+    }
+  
 }
