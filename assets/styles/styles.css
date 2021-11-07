@@ -12,6 +12,7 @@
 body{
     display: flex;
     flex-direction: column;
+    background-color: #FBF7F3;
 }
 ul{
     list-style: none;
@@ -194,9 +195,6 @@ nav ul li a:hover, nav ul li a:focus {
     flex-wrap: wrap;
     padding-top: 8.67vw;
 }
-.ride{
-    background-color: #FBF7F3;
-}
 .text-description__title{
     margin-bottom: 3.89vw;
 }
@@ -254,6 +252,28 @@ nav ul li a:hover, nav ul li a:focus {
     letter-spacing: 2.7px;
     color: #49464F;
 }
+/* END RIDE IT SECTION COMPUTER VERSION */
+/* BEGIN BUILT TO MOVE */
+.section__built-to-move{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.built-to-move__title{
+    margin-bottom: 22px;
+    font-size: 4.11vw;
+    line-height: 98%;
+    text-align: center;
+    letter-spacing: 2.7px;
+    color: #49464F;
+}
+.image-bicycle-side{
+    width: 90vw;
+}
+/* END BUILT TO MOVE SECTION */
+
+
 /*HEADER COMPUTER VERSION*/
 @media (min-width: 1040px) {
     .menu__icon {
@@ -325,6 +345,7 @@ nav ul li a:hover, nav ul li a:focus {
     }
     
 }
+/* RIDE IT SECTION MOBILE VERSION */
 @media (max-width: 805px)
 {
     .ride-big-text{
