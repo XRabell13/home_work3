@@ -13,10 +13,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-section{
-    background-color: red;
-    height: 1000px;
-}
 /*HEADER MOBILE VERSION*/
 .header {
     height: auto;
@@ -44,6 +40,7 @@ section{
     margin: 13px 0;
     top:63px;
     left:0;
+    z-index: 10;
     background-color: #3D4852;
 }
 .navigation{
@@ -59,9 +56,10 @@ section{
     overflow: hidden;
     transition: all 0.5s;
 }
-.navigation__links .links__container:last-child .link-item{
+.links__container_active .link-item{
     border-radius: 9999px;
     color:#FBF7F3;
+    padding: 10px 25px;
     background-color: #7140EB;
 }
 
@@ -101,7 +99,49 @@ nav ul li a:hover, nav ul li a:focus {
 }
 /*END HEADER MOBILE VERSION*/
 
-/**/
+/*SUBSCRIBE SECTION*/
+
+.section__subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+    position: relative; 
+}
+.subscribe__background-image{
+   position:absolute;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   z-index: -100;
+}
+.subscribe__text-on-image {
+    text-align: center;  
+}
+.title-on-image{
+    font-size: 80px;
+    line-height: 112%;
+    letter-spacing: 2.7px;
+    color: #FBF7F3;
+}
+.text-on-image__big-text{
+    width: auto;
+    height: auto;
+    margin: 25px 27.60vw;
+}
+.big-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 115%;
+    color: #FBF7F3;
+}
+.subscribe__text-on-image .links__container_active .link-item:hover {
+    background-color: #bd4aeb;
+}
+
+/*HEADER COMPUTER VERSION*/
 @media (min-width: 1040px) {
     .menu__icon {
         display: none;
@@ -128,12 +168,6 @@ nav ul li a:hover, nav ul li a:focus {
         max-height: 70px;
         text-align: right;
     }
-    .links__container_active .link-item{
-        border-radius: 9999px;
-        color:#FBF7F3;
-        padding: 10px 25px;
-        background-color: #7140EB;
-    }
     .links__container {
         display: inline-flex;
         padding-left: 50px;
@@ -151,4 +185,13 @@ nav ul li a:hover, nav ul li a:focus {
         color: #49464F;
     }
     
+    
+}
+@media (max-width: 425px) {
+    .title-on-image{
+        font-size: 18.82vw;
+    }
+   .text-on-image__big-text{
+       margin: 25px 10%;
+   }
 }
