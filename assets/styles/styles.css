@@ -269,9 +269,20 @@ nav ul li a:hover, nav ul li a:focus {
     color: #49464F;
 }
 .image-bicycle-side{
-    width: 90vw;
+    width: 80vw;
 }
 /* END BUILT TO MOVE SECTION */
+
+/* BEGIN SECTION PICTURE */
+.section__picture{
+    width: 100vw;
+    margin-bottom: 196px;
+}
+.picture__img{
+    width: 100%;
+}
+/* END SECTION PICTURE */
+
 
 /* BEGIN SECTION ON DRIVING ELEMENTS */
 .section__on-driving-elements{
